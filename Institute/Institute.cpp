@@ -1,5 +1,7 @@
 #include <iostream>
+#include"Ins.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Ins at;
+	at.test();
 }

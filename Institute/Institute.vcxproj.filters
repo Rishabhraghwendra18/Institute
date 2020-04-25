@@ -18,5 +18,13 @@
     <ClCompile Include="Institute.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
