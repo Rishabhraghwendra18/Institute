@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="Ins.cpp" />
     <ClCompile Include="Institute.cpp" />
+    <ClCompile Include="front.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ins.h" />
