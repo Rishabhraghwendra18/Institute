@@ -1,7 +1,7 @@
 #include <iostream>
 #include"Ins.h"
+void frend();
 int main()
 {
-	Ins at;
-	at.test();
+	frend();
 }
