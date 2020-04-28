@@ -1,2 +1,2 @@
 problem 1 (P1):- How many characters can accomodate in command line's first row ?
-Answer :- 119 characters .Finded by using hit and trial method . Using for loop to run for 119 times 
+Answer :- 119 characters in minimized window of command prompt .Finded by using hit and trial method . Using for loop to run for 119 times 
