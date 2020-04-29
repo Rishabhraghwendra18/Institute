@@ -2,5 +2,14 @@
 #include"Ins.h"
 int main()
 {
-	Ins at;
+	Ins at; int op;
+	cin >> op;
+	switch (op)
+	{
+	case 1:
+		create();
+		break;
+	case 2:
+
+	}
 }
