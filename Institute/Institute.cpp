@@ -3,5 +3,4 @@
 int main()
 {
 	Ins at;
-	at.test();
 }
