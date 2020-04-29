@@ -11,9 +11,7 @@ public:
 		admin = 0, fees = 0;
 		gender = 'M';
 	}
-	void test() {
-		cout << "Working";
-	}
+	
 	
 };
 
