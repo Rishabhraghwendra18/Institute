@@ -1,4 +1,5 @@
-﻿  Ins.cpp
-  Institute.cpp
-  Generating Code...
-  Institute.vcxproj -> C:\Users\risha\Documents\GitHub\Institute\Institute\Debug\Institute.exe
+﻿  Institute.cpp
+Institute.obj : error LNK2005: "void __cdecl create(void)" (?create@@YAXXZ) already defined in Ins.obj
+Institute.obj : error LNK2005: "void __cdecl search(int)" (?search@@YAXH@Z) already defined in Ins.obj
+Institute.obj : error LNK2005: "class Ins s1" (?s1@@3VIns@@A) already defined in Ins.obj
+C:\Users\risha\Documents\GitHub\Institute\Institute\Debug\Institute.exe : fatal error LNK1169: one or more multiply defined symbols found
