@@ -1,5 +1,6 @@
 #include <iostream>
 #include"Ins.h"
+using namespace std;
 void create();
 void search(int adm_n);
 class Ins;
