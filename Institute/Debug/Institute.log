@@ -1,3 +1,4 @@
-﻿  Institute.cpp
-C:\Users\risha\Documents\GitHub\Institute\Institute\Institute.cpp(9,8): error C2079:  'f1' uses undefined class 'Ins'
-C:\Users\risha\Documents\GitHub\Institute\Institute\Institute.cpp(9,11): error C2079:  'eg' uses undefined class 'Ins'
+﻿  Ins.cpp
+  Institute.cpp
+  Generating Code...
+  Institute.vcxproj -> C:\Users\risha\Documents\GitHub\Institute\Institute\Debug\Institute.exe
