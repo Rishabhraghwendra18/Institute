@@ -50,7 +50,7 @@ void Ins::input() {
 	}
 
 }
-void Ins::diplay() {
+void Ins::diplay() {  //use for displaying a particular data
 	cout << "Name of student : " << name;
 	cout << "\nAdmission Number : " << admin;
 	cout << "\n class : " << Class;
@@ -58,7 +58,7 @@ void Ins::diplay() {
 	cout << "\nJoining date : " << join_date;
 	cout << "\nBatch : " << batch;
 }
-void Ins::disp_all() {
+void Ins::disp_all() { //use for displaying all data from file 
 	ifstream ifs("Institute_data", ios::in || ios::binary);
 	Ins at;
 	while (ifs.read((char*)& at, sizeof(at)))
@@ -67,10 +67,10 @@ void Ins::disp_all() {
 	}
 	ifs.close();
 }
-int Ins::ad() {
+int Ins::ad() { //use for returning adminssion number for searching purpose 
 	return admin;
 }
-void create()
+void create() //use to create a binary file 
 {
 	ofstream ofs("Institute_data", ios::binary);
 	cout << "\nFile created successfully\n";
