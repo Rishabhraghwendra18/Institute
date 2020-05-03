@@ -5,6 +5,7 @@
 Ins::Ins() {
 	admin = 0, fees = 0;
 	gender = 'M';
+	name = '\0';
 }
 void Ins::in_file(Ins temp) {
 	ofstream fout;
@@ -14,12 +15,15 @@ void Ins::in_file(Ins temp) {
 	fout.close();
 }
 void Ins::input() {
+	cin.ignore();
 	cout << "Enter name : ";
-	getline(cin, name);
+	getline(cin,name);
 	cout << "Enter admission number : ";
 	cin >> admin;
+	cin.ignore();
 	cout << "Enter student gender(Press 'M' for male and 'F' for female) : ";
-	cin >> gender;
+	cin >> gender; 
+	cin.ignore();
 	if (gender == 'M' || gender == 'm')
 	{
 		cout << "Enter his joining date : ";
@@ -28,6 +32,7 @@ void Ins::input() {
 		getline(cin, batch);
 		cout << "Enter his fees : ";
 		cin >> fees;
+		cin.ignore();
 		cout << "Enter his class : ";
 		getline(cin, Class);
 	}
@@ -39,6 +44,7 @@ void Ins::input() {
 		getline(cin, batch);
 		cout << "Enter her fees : ";
 		cin >> fees;
+		cin.ignore();
 		cout << "Enter her class : ";
 		getline(cin, Class);
 	}
@@ -47,7 +53,7 @@ void Ins::input() {
 void Ins::diplay() {
 	cout << "Name of student : " << name;
 	cout << "\nAdmission Number : " << admin;
-	cout << "\nEnter his class : " << Class;
+	cout << "\n class : " << Class;
 	cout << "\nGender : " << gender;
 	cout << "\nJoining date : " << join_date;
 	cout << "\nBatch : " << batch;
@@ -59,6 +65,7 @@ void Ins::disp_all() {
 	{
 		at.diplay();
 	}
+	ifs.close();
 }
 int Ins::ad() {
 	return admin;
@@ -90,7 +97,13 @@ void search(int adm_n)
 		cout << "Not found";
 	}
 }
-
+void append_data() {
+	ofstream ofs("Institute_data", ios::app || ios::binary);
+	Ins temp;
+	temp.input();
+	ofs.write((char*)& temp, sizeof(temp));
+	ofs.close();
+}
 
 
 

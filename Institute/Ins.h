@@ -14,8 +14,10 @@ public:
 	void input();
 	void diplay();
 	void disp_all();
+	
 	int ad();
 	
 };
 void create();
 void search(int adm_n);
+void append_data();
