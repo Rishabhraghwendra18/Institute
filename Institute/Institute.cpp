@@ -6,7 +6,7 @@ int main()
 	Ins f1, eg; int op, ab; 
 	int z = 0;
 	char ans = 'y';									//f1-> object for only input in file. eg-> any random object for random task 
-										
+	cout << "Enter option :";
 	cin >> op;
 	while (ans=='Y'|| ans=='y')
 	{
